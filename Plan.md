@@ -4,14 +4,13 @@
 gantt
 dateFormat MM-dd
 title 总计划
-section .NET学习
-.NET学习: active, learn, 06-22, 2d
-section hook探究
-hook方式探究: hook_find, after learn, 3d
+section Hook
+hook方式探究: hook_find, 06-22, 3d
 hook位置探究: hook_location, after hook_find, 5d
-section hook实现
-数据转发: data_send, after hook_location, 2d
-hook实现: hook_impl, after data_send, 3d
+section 开发
+hook实现: hook_impl, after hook_location, 3d
+数据转发: data_send, after hook_impl, 2d
+漏洞检测: bug_check, after data_send, 2d
 ```
 
 ## 今日计划
