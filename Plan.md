@@ -21,7 +21,6 @@ demo实现: hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-hook位置: 09:00, 14:00
-承载启动: 14:00, 18:00
-hook位置: 18:00, 21:00
+承载启动: 9:00, 12:00
+hook位置: 12:00, 21:00
 ```
