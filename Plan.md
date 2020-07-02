@@ -12,7 +12,7 @@ hook位置研究: active, hook_location, after holiday, 3d
 section 开发
 demo实现: hook_impl, after startup, 3d
 数据转发: data_send, after hook_impl, 2d
-漏洞检测: bug_check, after data_send, 2d
+漏洞检测: bug_check, after data_send, 4d
 ```
 
 ## 今日计划
@@ -21,6 +21,8 @@ demo实现: hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-承载启动: 9:00, 12:00
-hook位置: 12:00, 21:00
+寻找入口点: 09:00, 21:00
 ```
+
+- [ ] 网站启动的入口点
+- [ ] 项目需要引入Harmony包
