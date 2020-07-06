@@ -21,9 +21,9 @@ demo实现: hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-依赖查找: 09:00, 10:00
-反射测试: 10:00, 16:00
-dll路径: 16:00, 18:00
+harmony源码研究测试: 09:00,16:00
+Realase失效原因: 16:00,21:00
+dll路径查找: 16:00,21:00
 ```
 
 ### 优先进行的计划
@@ -36,9 +36,11 @@ dll路径: 16:00, 18:00
   - [ ] 设计一个舒适的框架
   - [x] 对一个方法只需要在一个类中进行配置(利用Attribute)
   - [ ] ParamType列表处理方式要好好想想
+- [ ] Realase版本失效原因
+  - [ ] 研究harmony源码
+  - [ ] 项目目录结构
 
 ### 暂时搁置的计划
 
-- [ ] Realase版本失效原因(插件启动流程 and 项目目录结构)
 - [ ] 插件配置方式(Nuget包 or 插件独立发布 or 插件依赖框架)
 - [ ] 线程上下文同步(`harmony`自带的`state`参数 or [通过C#实现](https://lindexi.gitee.io/post/C-dotnet-%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E4%B8%8A%E4%B8%8B%E6%96%87.html))
