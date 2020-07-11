@@ -10,8 +10,8 @@ hook方式研究: done, hook_find, 06-22, 3d
 hook位置研究: done, hook_location, after holiday, 6d
 承载启动研究: done, startup ,after holiday, 6d
 section 开发
-demo实现: active, hook_impl, after startup, 3d
-数据转发: data_send, after hook_impl, 2d
+demo实现: done, hook_impl, after startup, 3d
+数据转发: active, data_send, after hook_impl, 2d
 漏洞检测: bug_check, after data_send, 4d
 ```
 
@@ -21,8 +21,8 @@ demo实现: active, hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-Patch的hook检查: 09:00,12:00
-项目发布后启动插件: 12:00,21:00
+http监听数据hook点: 09:00, 16:00
+实现http请求的hook: 16:00, 21:00
 ```
 
 ### 优先进行的计划
@@ -38,6 +38,9 @@ Patch的hook检查: 09:00,12:00
   - [ ] ParamType列表处理方式要好好想想
 - [ ] 插件配置方式(Nuget包 or 插件独立发布 or 插件依赖框架)
 - [ ] **`Context`传递**
+  - [ ] http监听的hook点
+  - [ ] 实现http请求数据的hook
+  - [ ] 或者通过承载启动注册一个服务监听请求的服务？
 - [ ] **函数调用栈**
 
 ### 暂时搁置的计划
