@@ -5,6 +5,7 @@
 - [ASP.NET Core管道](https://www.cnblogs.com/artech/p/asp-net-core-pipeline.html)
 - [ASP.NET Core通信管道](https://blog.csdn.net/Cool2Feel/article/details/100514911)
 - [基于工厂的中间件激活](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/middleware/extensibility?view=aspnetcore-3.1)
+- [动态添加管道/request repose处理](https://cloud.tencent.com/developer/article/1475831)
 
 ## 管道构成
 
@@ -18,6 +19,7 @@ WebHost --> Server: invoke
 WebHost --> Pipeline: create
 HostingApplication --|> IHttpApplication
 StartUp --> HostingApplication
+StartUp <-- Server
 IHttpApplication --> IFeatureCollection
 IHttpApplication --> HttpContext
 Server --> IServer
