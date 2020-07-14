@@ -45,6 +45,7 @@ title 今日计划
 - [x] **函数调用栈**
   - [x] 可以打印，但也含有`Agent`端信息
   - [ ] 去除`Agent`端信息
+  - [ ] 去除依赖`dll`的信息
 
 ### 暂时搁置的计划
 
@@ -55,13 +56,3 @@ title 今日计划
     - [ ] 运行时存储
     - [ ] NuGet包
 - [ ] 线程上下文同步(`harmony`自带的`state`参数 or [通过C#实现](https://lindexi.gitee.io/post/C-dotnet-%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E4%B8%8A%E4%B8%8B%E6%96%87.html))
-
-### 完成的计划
-
-- [x] 反射加载dll测试
-- [x] **Release版本失效原因**
-  - [x] 优化后失效
-  - [x] 研究akyapm源码
-  - [x] harmony反编译对比
-  - [x] 继承IHostedService来承载启动
-  > 反编译`MySql.Data.dll`查看源码得知`MySqlClient.ExecuteRead()`中调用的另一个重载`ExecuteReader(CommandBehavior)`，对后者进行hook成功。推测Release优化编码后直接调用后者，所以对前者hook失效。
