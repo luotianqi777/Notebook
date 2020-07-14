@@ -6,6 +6,8 @@
 - [ASP.NET Core通信管道](https://blog.csdn.net/Cool2Feel/article/details/100514911)
 - [基于工厂的中间件激活](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/middleware/extensibility?view=aspnetcore-3.1)
 - [动态添加管道/request repose处理](https://cloud.tencent.com/developer/article/1475831)
+- [访问`HttpContext`](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/http-context?view=aspnetcore-3.1)
+- [使用`OWIN`](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/owin?view=aspnetcore-3.1)
 
 ## 管道构成
 
