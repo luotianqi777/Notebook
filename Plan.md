@@ -21,8 +21,8 @@ demo实现: done, hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-查找相关项目: 09:00, 12:00
-函数调用栈: 12:00,21:00
+查找相关项目: 09:00, 14:00
+查找插件配置方式: 14:00,18:00
 ```
 
 ### 优先进行的计划

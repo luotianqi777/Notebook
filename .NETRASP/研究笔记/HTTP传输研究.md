@@ -2,12 +2,14 @@
 
 ## 参考资料
 
-- [ASP.NET Core管道](https://www.cnblogs.com/artech/p/asp-net-core-pipeline.html)
-- [ASP.NET Core通信管道](https://blog.csdn.net/Cool2Feel/article/details/100514911)
+- [`ASP.NET Core`管道](https://www.cnblogs.com/artech/p/asp-net-core-pipeline.html)
+- [`ASP.NET Core`通信管道](https://blog.csdn.net/Cool2Feel/article/details/100514911)
 - [基于工厂的中间件激活](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/middleware/extensibility?view=aspnetcore-3.1)
-- [动态添加管道/request repose处理](https://cloud.tencent.com/developer/article/1475831)
+- [动态添加管道/`request` `repose`处理](https://cloud.tencent.com/developer/article/1475831)
 - [访问`HttpContext`](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/http-context?view=aspnetcore-3.1)
 - [使用`OWIN`](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/owin?view=aspnetcore-3.1)
+- [使用`WebHostBuilder`配置`ASP.NET Core`应用](https://ardalis.com/configuring-aspnet-core-apps-with-webhostbuilder/)
+- [`ASP.NET Core`框架本质](https://www.cnblogs.com/artech/p/inside-asp-net-core-framework.html)
 
 ## 管道构成
 
