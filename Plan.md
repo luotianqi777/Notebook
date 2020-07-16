@@ -21,26 +21,26 @@ demo实现: done, hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-查找相关项目: 09:00, 14:00
-查找插件配置方式: 14:00, 21:00
+找http的hook点: 09:00, 14:00
+找Configure的hook点: 14:00, 21:00
 ```
 
 ### 优先进行的计划
 
-- [ ] 写一个DLL加载工具
+- [ ] 写一个 DLL 加载工具
   - [x] 读取项目依赖
-  - [x] 派生HarmongPatchAttribute，减少代码冗余
-  - [x] **实现动态加载DLL**
-    - [x] 找到依赖对应dll类库的路径
-    - [x] 解决Patch找不到dll路径后Prefix会报错的问题(修改Harmony源码)
+  - [x] 派生 HarmongPatchAttribute，减少代码冗余
+  - [x] **实现动态加载 DLL**
+    - [x] 找到依赖对应 dll 类库的路径
+    - [x] 解决 Patch 找不到 dll 路径后 Prefix 会报错的问题(修改 Harmony 源码)
     - [x] 参考`SkyApm`的做法
-  - [x] 对一个方法只需要在一个类中进行配置(利用Attribute)
-  - [ ] ParamType列表处理方式要好好想想
-- [ ] 插件配置方式(Nuget包 or 插件独立发布 or 插件依赖框架)
+  - [x] 对一个方法只需要在一个类中进行配置(利用 Attribute)
+  - [ ] ParamType 列表处理方式要好好想想
+- [ ] 插件配置方式(Nuget 包 or 插件独立发布 or 插件依赖框架)
 - [ ] **`Context`传递**
   - [x] 通过承载启动注册一个注册中间件的服务(但不确定服务的参数中能不能找到注册方法)
-  - [x] 找到asp.net源码中底层配置中间件的方法去hook
-  - [x] 找到http的方法去hook
+  - [ ] 找到 asp.net 源码中底层配置中间件的方法去 hook
+  - [ ] 找到 http 的方法去 hook
   - [ ] 找类似项目学习经验
 - [x] **函数调用栈**
   - [x] 可以打印，但也含有`Agent`端信息
@@ -54,5 +54,5 @@ title 今日计划
   - [ ] 指定承载启动程序集设置环境变量`HostingStartupLibrary;HostingStartupPackage;StartupDiagnostics`
   - [ ] 承载启动激活选项
     - [ ] 运行时存储
-    - [ ] NuGet包
-- [ ] 线程上下文同步(`harmony`自带的`state`参数 or [通过C#实现](https://lindexi.gitee.io/post/C-dotnet-%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E4%B8%8A%E4%B8%8B%E6%96%87.html))
+    - [ ] NuGet 包
+- [ ] 线程上下文同步(`harmony`自带的`state`参数 or [通过 C#实现](https://lindexi.gitee.io/post/C-dotnet-%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E4%B8%8A%E4%B8%8B%E6%96%87.html))
