@@ -10,8 +10,8 @@ hook方式研究: done, hook_find, 06-22, 3d
 hook位置研究: done, hook_location, after holiday, 6d
 承载启动研究: done, startup ,after holiday, 6d
 section 开发
-demo实现: done, hook_impl, after startup, 3d
-数据转发: active, data_send, after hook_impl, 2d
+demo实现: done, hook_impl, after startup, 5d
+数据转发: active, data_send, after hook_impl, 14d
 漏洞检测: bug_check, after data_send, 4d
 ```
 
@@ -21,8 +21,7 @@ demo实现: done, hook_impl, after startup, 3d
 gantt
 dateFormat  HH:mm
 title 今日计划
-找http的hook点: 09:00, 14:00
-找Configure的hook点: 14:00, 21:00
+HookHttp: 09:00, 18:00
 ```
 
 ### 优先进行的计划
@@ -42,6 +41,7 @@ title 今日计划
   - [ ] 找到 asp.net 源码中底层配置中间件的方法去 hook
   - [ ] 找到 http 的方法去 hook
   - [ ] 找类似项目学习经验
+  - [ ] 注册 Http 监听服务
 - [x] **函数调用栈**
   - [x] 可以打印，但也含有`Agent`端信息
   - [ ] 去除`Agent`端信息

@@ -1,4 +1,4 @@
-# HTTP研究
+# HTTP 研究
 
 ## 参考资料
 
@@ -10,6 +10,8 @@
 - [使用`OWIN`](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/owin?view=aspnetcore-3.1)
 - [使用`WebHostBuilder`配置`ASP.NET Core`应用](https://ardalis.com/configuring-aspnet-core-apps-with-webhostbuilder/)
 - [`ASP.NET Core`框架本质](https://www.cnblogs.com/artech/p/inside-asp-net-core-framework.html)
+- [监听`Http`请求](https://blog.csdn.net/lordwish/article/details/86615077)
+- [内部类访问](https://www.cnblogs.com/qingyuan/archive/2010/08/25/1808177.html)
 
 ## 管道构成
 
@@ -44,3 +46,11 @@ IServer: Start(IHttpApplication)
 - `WebHostBuilder`创建`WebHost`，`WebHost`创建管道
 - 在`StartUp`中定制管道(中间件或者`HttpApplication`)，在`WebHostBuilder`中注册，在`WebHost`中调用
 - `Server`同上
+
+## Http传输点hook
+
+位置:`HostingApplication.ProcessRequestAsync(HostingApplication.Context)`
+反射:`Microsoft.AspNetCore.Hosting.HostingApplication`
+公共API中的类名:`Microsoft.AspNetCore.Hosting.Internal+HostingApplication`
+源码中的类名:`Microsoft.AspNetCore.Hosting.HostingApplication`
+两者位置冲突，反射源码中的位置可以加载类及方法，公共API中的位置则加载失败
