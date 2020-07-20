@@ -11,8 +11,8 @@ hook位置研究: done, hook_location, after holiday, 6d
 承载启动研究: done, startup ,after holiday, 6d
 section 开发
 demo实现: done, hook_impl, after startup, 5d
-数据转发: active, data_send, after hook_impl, 14d
-漏洞检测: bug_check, after data_send, 4d
+数据转发: done, data_send, after hook_impl, 10d
+漏洞检测demo: active, bug_check, after data_send, 5d
 ```
 
 ## 今日计划
@@ -21,7 +21,7 @@ demo实现: done, hook_impl, after startup, 5d
 gantt
 dateFormat  HH:mm
 title 今日计划
-HookHttp: 09:00, 18:00
+承载启动加载中间件: 09:00, 21:00
 ```
 
 ### 优先进行的计划
@@ -36,12 +36,6 @@ HookHttp: 09:00, 18:00
   - [x] 对一个方法只需要在一个类中进行配置(利用 Attribute)
   - [ ] ParamType 列表处理方式要好好想想
 - [ ] 插件配置方式(Nuget 包 or 插件独立发布 or 插件依赖框架)
-- [ ] **`Context`传递**
-  - [x] 通过承载启动注册一个注册中间件的服务(但不确定服务的参数中能不能找到注册方法)
-  - [ ] 找到 asp.net 源码中底层配置中间件的方法去 hook
-  - [ ] 找到 http 的方法去 hook
-  - [ ] 找类似项目学习经验
-  - [ ] 注册 Http 监听服务
 - [x] **函数调用栈**
   - [x] 可以打印，但也含有`Agent`端信息
   - [ ] 去除`Agent`端信息
