@@ -21,7 +21,8 @@ demo实现: done, hook_impl, after startup, 5d
 gantt
 dateFormat  HH:mm
 title 今日计划
-承载启动加载中间件: 09:00, 21:00
+简单SQL检测: 09:00, 14:00
+HttpContext线程处理: 14:00,21:00
 ```
 
 ### 优先进行的计划
