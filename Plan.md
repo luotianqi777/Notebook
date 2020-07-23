@@ -7,8 +7,8 @@ title 开发进度安排
 section 请求转发
 请求转发: active, request, 07-23, 4d
 section 漏洞检测
-命令执行: cmd_exec, after request, 2d
-文件: file, after cmd_exec, 4d
+命令: cmd, after request, 2d
+文件: file, after cmd, 4d
 SSRF: ssrf, after file, 2d
 xxe: xxe, after ssrf, 2d
 xss: xss, after xxe, 2d
@@ -30,6 +30,10 @@ dateFormat  HH:mm
 title 今日计划
 请求转发: 09:00,21:00
 ```
+
+### Note
+
+- [Agent 数据传输格式](http://cd.xmirror.com.cn:89/pages/viewpage.action?pageId=36110338)
 
 ### 优先进行的计划
 
