@@ -5,21 +5,21 @@ gantt
 dateFormat MM-DD
 title 开发进度安排
 section 请求转发
-请求转发: active, request, 07-23, 4d
+请求转发: active, 07-23, 4d
 section 漏洞检测
-命令: cmd, after request, 2d
-文件: file, after cmd, 4d
-SSRF: ssrf, after file, 2d
-xxe: xxe, after ssrf, 2d
-xss: xss, after xxe, 2d
+命令: 2d
+文件: 4d
+SSRF: 2d
+xxe: 2d
+xss: 2d
 section 心跳
-心跳: doki, after xss, 4d
+心跳: 4d
 section 自动化安装
-自动化安装: auto, after doki, 5d
+自动化安装: 5d
 section 日志文件
-日志文件: log, after auto, 3d
+日志文件: 3d
 section 配置文件
-配置文件: configure, after log, 3d
+配置文件: 3d
 ```
 
 ## 今日计划
