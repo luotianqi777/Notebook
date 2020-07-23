@@ -3,22 +3,7 @@
 ```mermaid
 gantt
 dateFormat MM-DD
-title 研究规划
-section 研究
-hook研究: done, hook_find, 06-22, 3d
-假期+检测: done, holiday, after hook_find, 5d
-hook位置研究: done, hook_location, after holiday, 6d
-承载启动研究: done, startup ,after holiday, 6d
-section 演示
-demo实现: done, hook_impl, after startup, 5d
-http请求获取: done, data_send, after hook_impl, 10d
-检测demo: done, bug_check, after data_send, 3d
-```
-
-```mermaid
-gantt
-dateFormat MM-DD
-title 开发规划
+title 开发进度安排
 section 请求转发
 请求转发: active, request, 07-23, 4d
 section 漏洞检测
