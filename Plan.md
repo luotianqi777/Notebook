@@ -15,17 +15,53 @@ demo实现: done, hook_impl, after startup, 5d
 漏洞检测demo: active, bug_check, after data_send, 5d
 ```
 
+```mermaid
+gantt
+dateFormat MM-DD
+title 开发规划
+section 请求转发
+请求转发: active, request, 07-23, 4d
+section 漏洞检测
+命令执行: cmd_exec, after request, 2d
+文件: file, after cmd_exec, 4d
+SSRF: ssrf, after file, 2d
+xxe: xxe, after ssrf, 2d
+xss: xss, after xxe, 2d
+section 心跳
+心跳: doki, after xss, 4d
+section 自动化安装
+自动化安装: auto, after doki, 5d
+section 日志文件
+日志文件: log, after auto, 3d
+section 配置文件
+配置文件: configure, after log, 3d
+```
+
 ## 今日计划
 
 ```mermaid
 gantt
 dateFormat  HH:mm
 title 今日计划
-简单SQL检测: 09:00, 14:00
-HttpContext线程处理: 14:00,21:00
+请求转发: 09:00,21:00
 ```
 
 ### 优先进行的计划
+
+- [ ] 实现请求转发
+- [ ] 测试漏洞检测
+- [ ] 开发漏洞检测
+  - [ ] 命令执行
+  - [ ] 文件相关
+  - [ ] SSRF
+  - [ ] XXE
+  - [ ] XSS
+- [ ] 心跳
+- [ ] 自动化安装
+- [ ] 日志文件
+- [ ] 配置文件
+
+### 暂时搁置的计划
 
 - [ ] 写一个 DLL 加载工具
   - [x] 读取项目依赖
@@ -41,13 +77,9 @@ HttpContext线程处理: 14:00,21:00
   - [x] 可以打印，但也含有`Agent`端信息
   - [ ] 去除`Agent`端信息
   - [ ] 去除依赖`dll`的信息
-
-### 暂时搁置的计划
-
 - [ ] [发布后未加载程序集](https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/host/platform-specific-configuration?view=aspnetcore-3.1)
   - [ ] 加载顺序:`ConfigureAppConfiguration`还是`UseConfiguration`
   - [ ] 指定承载启动程序集设置环境变量`HostingStartupLibrary;HostingStartupPackage;StartupDiagnostics`
   - [ ] 承载启动激活选项
     - [ ] 运行时存储
     - [ ] NuGet 包
-- [ ] 线程上下文同步(`harmony`自带的`state`参数 or [通过 C#实现](https://lindexi.gitee.io/post/C-dotnet-%E8%87%AA%E5%B7%B1%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E4%B8%8A%E4%B8%8B%E6%96%87.html))
