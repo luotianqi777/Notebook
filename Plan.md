@@ -31,10 +31,6 @@ title 今日计划
 请求转发: 09:00,21:00
 ```
 
-### Note
-
-- [Agent 数据传输格式](http://cd.xmirror.com.cn:89/pages/viewpage.action?pageId=36110338)
-
 ### 优先进行的计划
 
 - [ ] 实现请求转发
