@@ -5,7 +5,7 @@ gantt
 dateFormat MM-DD
 title 开发进度安排
 section 请求转发
-请求转发: active, 07-23, 4d
+请求转发: active, 07-23, 5d
 section 漏洞检测
 命令: 2d
 文件: 4d
@@ -15,7 +15,7 @@ xss: 2d
 section 心跳
 心跳: 4d
 section 自动化安装
-自动化安装: 5d
+自动化安装: 4d
 section 日志文件
 日志文件: 3d
 section 配置文件
