@@ -6,14 +6,13 @@ dateFormat MM-DD
 title 开发进度安排
 section 请求转发
 请求转发: active, 07-23, 5d
+心跳: active, 4d
 section 漏洞检测
 命令: 2d
 文件: 4d
 SSRF: 2d
 xxe: 2d
 xss: 2d
-section 心跳
-心跳: 4d
 section 自动化安装
 自动化安装: 4d
 section 日志文件
