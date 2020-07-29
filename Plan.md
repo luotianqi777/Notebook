@@ -27,7 +27,7 @@ section 配置文件
 gantt
 dateFormat  HH:mm
 title 今日计划
-请求转发: 09:00,21:00
+心跳: 09:00,21:00
 ```
 
 ### 优先进行的计划
