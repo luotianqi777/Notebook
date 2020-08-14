@@ -9,10 +9,10 @@ section 请求转发
 心跳: active, 4d
 section 漏洞检测
 文件: 5d
-命令: 3d
-SSRF: 2d
 xxe: 2d
 xss: 2d
+SSRF: 2d
+命令: 3d
 section 自动化安装
 自动化安装: 4d
 section 日志文件
@@ -25,14 +25,15 @@ section 日志文件
 - [x] 心跳
 - [x] 测试漏洞检测
 - [ ] 开发漏洞检测
+  - [x] Sql 注入
   - [ ] 命令注入
   - [x] 文件读取
   - [x] 文件写入
   - [ ] 文件上传
-  - [ ] XXE
+  - [x] XXE
   - [ ] SSRF
   - [ ] XSS
   - [x] url 重定向
 - [ ] 自动化安装
-- [ ] 日志文件
+- [x] 日志文件
 - [x] 配置文件
