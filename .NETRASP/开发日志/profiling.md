@@ -3,6 +3,7 @@
 ## 参考资料
 
 <https://dev.to/gabbersepp/create-a-net-profiler-with-the-profiling-api-start-of-an-unexpected-journey-198n>
+<http://club.oneapm.com/t/net-profiling/805>
 
 ## 工作原理
 
@@ -38,4 +39,17 @@
 
 [参考资料](https://www.cnblogs.com/ptfblog/archive/2011/12/16/2290735.html)
 
-实例方法的第一个参数为引用实例，因此在 hook 时要比静态方法多一个参数。
+实例方法的第一个参数为实例对象的地址(大概)，因此在 hook 时要比静态方法多一个参数。
+
+### .net core 探查器
+
+[参考资料](https://github.com/dotnet/runtime/issues/9211)
+
+### 另外的 Profiling 项目
+
+[clr](https://github.com/microsoft/clr-samples)
+[Hijack](https://github.com/djhohnstein/.NET-Profiler-DLL-Hijack)
+
+### 类
+
+[类加载](https://docs.microsoft.com/zh-cn/dotnet/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-metho])
