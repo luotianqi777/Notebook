@@ -23,7 +23,7 @@
 #### 探查器配置方法
 
 - 添加`include<corprof.h>`
-- 添加`CComQIPtr<ICorprofilerInfo[num]> ICorprofilerInfo`到类外部(不知道为什么要放到类外面)
+- 添加`CComQIPtr<ICorprofilerInfo[num]> ICorprofilerInfo`
 - 添加`pICorProfilerInfoUnk->QueryInterface(IID_ICorProfilerInfo[num],(LPVOID*)&iCorProfilerInfo)`到`Initialize()`
 
 - 通过`ICorprofilerInfo`设置事件过滤
